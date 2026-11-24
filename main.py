@@ -20,6 +20,9 @@ def main() -> int:
     if not text.strip():
         print("entry must not be only whitespace", file=sys.stderr)
         return 1
+    if "\n" in text or "\r" in text:
+        print("entry must be a single line", file=sys.stderr)
+        return 1
     if any(ord(ch) < 0x20 and ch not in "\n\t" for ch in text):
         print("entry must not contain control characters", file=sys.stderr)
         return 1

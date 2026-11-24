@@ -9,10 +9,10 @@ exist — written to make a bored commuter smile on the way to work.
 
 **Entry:** "In Timetable Falls, rain arrives at 8:04 sharp — unlike your
 bus. The clouds keep their schedule; the trains keep secrets. Bring a
-coat." (136 characters)
+coat." (138 characters)
 
 `main.py` reads `entry.txt`, checks the sealed gate (UTF-8, 1–140
-characters, no control characters), and writes it byte-identical to
+characters, single line, no control characters), and writes it byte-identical to
 `/output/entry.txt` with mode 0644. Stdlib only, no network.
 
 Built by an AI agent for the [make.fun](https://make.fun/?ref=wa8qfxzr) bounty
